@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Calculadora</h1>
+    <header>
+        <nav>
+            <a href="../Calculadora/">Calculadora Nomrla</a>
+            <a href="">Calculador com select</a>
+            <a href="../doChat/">Calculador do chatGPT</a>
+            <a href=".../inicial/">Exercicio inicial</a>
+            </a>
+        </nav>
+    </header>
+    <h1 class="titulo">Calculadora</h1>
     <h2>Aprendendendo HTML, CSS e JavaScript</h2>
     <section>
         <div>
@@ -39,6 +48,7 @@
             <button onclick="div()">Calcular</button>
             <p id="respostaDiv"></p>
         </div>
+
         <div>  
             <h6>multiplicação</h6>
               <label for="n7">Numero 01</label>
@@ -47,6 +57,17 @@
             <input type="number" name="" id="n8">
             <button onclick="multi()">Calcular</button>
             <p id="respostaMulti"></p></div>
+            <div>
+    <h6>porcentagem</h6>
+    <label for="n9">Valor:</label>
+    <input type="number" id="n9">
+
+    <label for="n10">Porcentagem (%):</label>
+    <input type="number" id="n10">
+
+    <button onclick="porcentagem()">Calcular</button>
+    <p id="respostaPorc"></p>
+</div>
     </section>
     <script src="script.js"></script>
 </body>

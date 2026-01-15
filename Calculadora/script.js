@@ -17,8 +17,14 @@ function soma() {
         var numero5 = parseFloat(document.getElementById("n5").value)
         var numero6 = parseFloat(document.getElementById("n6").value)
         var resp = document.getElementById("respostaDiv")
-        //console.log(typeof numero1, typeof numero2)
-        resp.innerHTML = numero5 / numero6
+        if(numero6 !== 0){
+            document.getElementById("respostaDiv")
+            resp.innerHTML = numero5 / numero6
+        }else{
+            alert("Não existe divisão por 0, animal!!!")
+        }
+        
+    
     }
     function multi() { 
         var numero7 = parseFloat(document.getElementById("n7").value)
@@ -28,3 +34,12 @@ function soma() {
         
         resp.innerHTML = numero7 * numero8
     }
+
+    function porcentagem() {
+    var valor = parseFloat(document.getElementById("n9").value)
+    var porcento = parseFloat(document.getElementById("n10").value)
+    var resp = document.getElementById("respostaPorc")
+
+    var resultado = (valor * porcento) / 100
+    resp.innerHTML = resultado
+}
